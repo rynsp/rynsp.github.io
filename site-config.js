@@ -6,7 +6,7 @@ window.PORTFOLIO_CONFIG = {
   whatsapp: "",
   github: "https://github.com/rynsp",
   linkedin: "https://www.linkedin.com/in/ryan-syahputera-b101ba107/",
-  photo: "",
+  photo: "assets/ryan-syahputera.png",
   projectLinks: {
     shipboard: { repo: "", demo: "" },
     intrapdf: { repo: "", demo: "" },

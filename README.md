@@ -4,13 +4,12 @@ Situs portofolio statis untuk GitHub Pages. Tidak memerlukan framework, instalas
 
 ## Sesuaikan identitas
 
-Biodata Ryan, email, GitHub, dan LinkedIn sudah diisi pada `site-config.js`. WhatsApp sengaja dikosongkan. Repository dan demo untuk masing-masing proyek dibiarkan kosong sampai URL publiknya siap dibagikan. Foto profil dapat dimasukkan melalui field `photo` setelah file atau URL fotonya tersedia.
+Biodata Ryan, email, GitHub, dan LinkedIn sudah diisi pada `site-config.js`. WhatsApp sengaja dikosongkan. Repository dan demo untuk masing-masing proyek dibiarkan kosong sampai URL publiknya siap dibagikan. Foto profil Ryan tersimpan di `assets/ryan-syahputera.png` dan dikonfigurasi melalui field `photo`.
 
 Ringkasan proyek dan teknologi ada di `script.js`. Kartu awal mencakup ShipBoard, IntraPDF, SimplePos Offline, Pocketstep Studio, Solok Terpadu, Solok Diujung Jari, dan Palado. Untuk Palado, kontribusi sudah ditandai sebagai pengembangan lanjutan dan refactor dari codebase yang dibuat developer sebelumnya. Gambar antarmuka dibuat dengan CSS sebagai ilustrasi, bukan tangkapan layar aplikasi.
 
 ## Yang bisa dilengkapi nanti
 
-- Foto profil pada field `photo` di `site-config.js`.
 - Tautan repository dan demo proyek, setelah URL publiknya dipilih.
 - Rincian hasil proyek, dengan angka atau klaim yang bisa dibuktikan.
 
