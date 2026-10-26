@@ -5,7 +5,7 @@ window.PORTFOLIO_CONFIG = {
   email: "ryan93sp@gmail.com",
   whatsapp: "",
   github: "https://github.com/rynsp",
-  linkedin: "https://www.linkedin.com/in/ryan-syahputera-b101ba107/",
+  linkedin: "https://www.linkedin.com/in/ryan-syahputera",
   photo: "assets/ryan-syahputera.png",
   projectLinks: {
     shipboard: { repo: "", demo: "" },
