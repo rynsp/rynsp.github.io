@@ -4,8 +4,9 @@ window.PORTFOLIO_CONFIG = {
   role: "Web & Mobile Developer",
   email: "ryan93sp@gmail.com",
   whatsapp: "",
-  github: "",
+  github: "https://github.com/rynsp",
   linkedin: "https://www.linkedin.com/in/ryan-syahputera-b101ba107/",
+  photo: "",
   projectLinks: {
     shipboard: { repo: "", demo: "" },
     intrapdf: { repo: "", demo: "" },

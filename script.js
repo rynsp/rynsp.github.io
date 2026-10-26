@@ -106,7 +106,7 @@ const visualMarkup = {
 const config = window.PORTFOLIO_CONFIG || {};
 const cleanText = (value, fallback) => typeof value === "string" && value.trim() ? value.trim() : fallback;
 const profileName = cleanText(config.name, "Ryan Syahputera");
-const profileRole = cleanText(config.role, "Pengembang Aplikasi Web & Mobile");
+const profileRole = cleanText(config.role, "Web & Mobile Developer");
 
 document.querySelectorAll("[data-profile-name]").forEach((node) => {
   node.textContent = profileName;
@@ -116,6 +116,21 @@ document.querySelectorAll("[data-profile-role]").forEach((node) => {
 });
 document.title = `${profileName} — Portofolio digital`;
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const profilePhotoUrl = typeof config.photo === "string" ? config.photo.trim() : "";
+const profilePhotoImage = document.getElementById("profile-photo-image");
+const profilePhotoFallback = document.getElementById("profile-photo-fallback");
+if (profilePhotoUrl && profilePhotoImage && profilePhotoFallback) {
+  profilePhotoImage.src = profilePhotoUrl;
+  profilePhotoImage.hidden = false;
+  profilePhotoImage.addEventListener("load", () => {
+    profilePhotoFallback.hidden = true;
+  }, { once: true });
+  profilePhotoImage.addEventListener("error", () => {
+    profilePhotoImage.hidden = true;
+    profilePhotoFallback.hidden = false;
+  }, { once: true });
+}
 
 const grid = document.getElementById("project-grid");
 const renderProject = (project) => `
