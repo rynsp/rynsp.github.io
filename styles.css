@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --paper: #f4f2ec;
-  --paper-2: #eae8e1;
-  --ink: #20212b;
-  --muted: #6d6e75;
-  --line: rgba(32, 33, 43, .16);
-  --purple: #3d3fd4;
-  --acid: #e6f57b;
+  --paper: #f7f9fc;
+  --paper-2: #edf2f7;
+  --ink: #172b3c;
+  --muted: #526273;
+  --line: rgba(23, 43, 60, .14);
+  --purple: #245b8f;
+  --acid: #dbe8f4;
   --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
-  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --display: "Manrope", var(--sans);
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --display: "Inter", var(--sans);
 }
 
 * { box-sizing: border-box; }
@@ -190,4 +190,159 @@ button { cursor: pointer; }
 @media (max-width: 640px) {
   .services-inner { padding-top: 67px; padding-bottom: 67px; }.services-heading h2 { font-size: clamp(43px, 12vw, 57px); }.service-grid { grid-template-columns: 1fr; gap: 9px; }.service-card { min-height: 0; padding: 17px; }.service-icon { margin: 15px 0 10px; }.service-card p { min-height: 0; }.service-tags { margin-top: 11px; }
   .skills-section { grid-template-columns: 1fr; gap: 27px; padding-top: 68px; padding-bottom: 70px; }.skills-intro h2 { font-size: clamp(45px, 12vw, 58px); }.skills-intro > p:last-child { max-width: 310px; }.skill-group { grid-template-columns: 112px 1fr; gap: 10px; padding: 13px 0; }.skill-group > span { font-size: 7px; }.skill-group i { padding: 6px 8px; font-size: 8px; }
+}
+
+/* Readability and visual refinement. */
+body { font-size: 16px; line-height: 1.65; }
+.site-header { background: rgba(247, 249, 252, .94); }
+.site-nav { gap: 30px; font-size: 14px; }
+.site-nav a:first-child span { font-size: 10px; }
+.eyebrow { font-size: 11px; letter-spacing: .08em; }
+.hero h1 { max-width: 660px; font-size: clamp(48px, 5.7vw, 72px); letter-spacing: -.055em; line-height: 1.04; }
+.hero-intro { max-width: 365px; font-size: 16px; line-height: 1.7; }
+.hero-art::before { background: #dce8f2; }
+.hero-art::after, .art-orbit { border-color: rgba(36, 91, 143, .2); }
+.art-label { border-color: var(--line); background: #fff; font-size: 10px; }
+.art-sticker { box-shadow: 0 12px 30px rgba(23, 43, 60, .14); }
+.ticker, .services-section { background: var(--paper-2); }
+.ticker-track { color: #43576a; font-size: 11px; }
+.projects-section { padding-top: 96px; padding-bottom: 96px; }
+.section-heading { gap: 48px; margin-bottom: 38px; }
+.section-heading h2, .services-heading h2, .about-copy h2, .skills-intro h2, .contact-section h2 {
+  font-size: clamp(38px, 4.2vw, 54px);
+  letter-spacing: -.045em;
+  line-height: 1.08;
+}
+.section-heading h2 { margin-top: 19px; }
+.section-aside { max-width: 320px; font-size: 15px; line-height: 1.7; }
+.filter-chip { padding: 10px 15px; color: #43576a; font-size: 13px; }
+.filter-chip:hover, .filter-chip.is-active { border-color: var(--ink); background: var(--ink); }
+.project-grid { gap: 22px; }
+.project-card { border-color: rgba(23, 43, 60, .13); border-radius: 10px; background: #fff; }
+.project-card:hover { box-shadow: 0 16px 36px rgba(23, 43, 60, .1); }
+.project-visual { height: 245px; }
+.tone-lavender .project-visual { background: #e2e9f1; }
+.tone-peach .project-visual { background: #eee5dc; }
+.tone-mint .project-visual { background: #e1ebe5; }
+.tone-blue .project-visual { background: #dce7f1; }
+.tone-sky .project-visual { background: #dce9eb; }
+.tone-orange .project-visual { background: #eee8dd; }
+.tone-rose .project-visual { background: #eee4e5; }
+.project-visual::before, .project-visual::after { border-color: rgba(23, 43, 60, .09); }
+.project-card-copy { min-height: 184px; padding: 20px 22px; }
+.project-meta { color: #536579; font-size: 10px; }
+.project-meta span:last-child, .card-corner { color: #718196; }
+.project-card h3 { font-size: 24px; letter-spacing: -.035em; }
+.project-card-copy > p { color: #536273; font-size: 15px; line-height: 1.6; }
+.project-open { margin-top: 17px; font-size: 13px; }
+.project-open span { width: 24px; height: 24px; }
+.project-footnote { color: #536273; font-size: 13px; }
+.mock-window, .mock-pdf, .mock-pos, .mock-studio, .mock-civic, .mock-map, .mock-population {
+  border-color: rgba(23, 43, 60, .14);
+  border-radius: 10px;
+  box-shadow: 0 14px 32px rgba(23, 43, 60, .12);
+  transform: none;
+}
+.services-inner { padding-top: 82px; padding-bottom: 84px; }
+.services-heading { margin-bottom: 32px; }
+.service-grid { gap: 16px; }
+.service-card { min-height: 250px; padding: 23px; border-color: rgba(23, 43, 60, .13); border-radius: 10px; background: #fff; }
+.service-card:hover { background: #fff; box-shadow: 0 12px 28px rgba(23, 43, 60, .08); }
+.service-card > span { color: #607184; font-size: 10px; }
+.service-icon { width: 40px; height: 40px; margin: 22px 0 16px; }
+.service-card h3 { font-size: 18px; letter-spacing: -.025em; }
+.service-card p { max-width: 340px; min-height: 65px; color: #536273; font-size: 15px; line-height: 1.65; }
+.service-tags { gap: 7px; }
+.service-tags i { padding: 6px 9px; color: #536273; font-size: 10px; }
+.skills-section { gap: 64px; padding-top: 82px; padding-bottom: 84px; }
+.skills-intro h2 { margin-top: 18px; }
+.skills-intro > p:last-child { max-width: 360px; color: #536273; font-size: 15px; line-height: 1.7; }
+.skill-group { grid-template-columns: 165px 1fr; gap: 20px; padding: 18px 0; }
+.skill-group > span { color: #607184; font-size: 10px; }
+.skill-group > div { gap: 8px; }
+.skill-group i { padding: 8px 12px; border-color: rgba(23, 43, 60, .14); color: #344a5f; background: #fff; font-size: 13px; }
+.about-section { color: #f3f7fb; background: #193b59; }
+.about-inner { gap: 42px; padding-top: 88px; padding-bottom: 84px; }
+.about-marker .eyebrow { color: #c2d1df; }
+.about-copy h2 em { color: #c8dff1; }
+.about-copy > p { max-width: 580px; color: #d2deea; font-size: 16px; line-height: 1.75; }
+.focus-list { border-color: rgba(255, 255, 255, .2); }
+.focus-list > div { border-color: rgba(255, 255, 255, .2); }
+.focus-list span, .focus-list small { color: #c1d0de; font-size: 12px; }
+.focus-list b { font-size: 15px; }
+.about-note { border-color: rgba(255, 255, 255, .24); border-radius: 9px; }
+.about-note p { max-width: 190px; color: #e0e8ef; font-size: 13px; line-height: 1.7; }
+.note-number { color: #c1d0de; font-size: 10px; }
+.contact-section { padding-top: 90px; padding-bottom: 90px; }
+.contact-section h2 { margin-top: 25px; }
+.contact-copy { color: #536273; font-size: 16px; }
+.contact-link { gap: 22px; padding: 13px 17px; border-radius: 6px; background: var(--purple); font-size: 14px; }
+.contact-link:hover { background: #183f63; }
+.contact-link span { color: #eaf3fb; }
+.github-link { background: var(--acid); }
+.contact-setup { color: #536273; font-size: 13px; }
+.contact-setup code { font-size: 12px; }
+.site-footer { min-height: 90px; }
+.site-footer > p, .back-top { color: #536273; font-size: 12px; }
+.project-dialog { border-radius: 12px; }
+.dialog-head { padding: 20px 26px; }
+.dialog-kicker, .dialog-category { font-size: 11px; }
+.dialog-body { padding: 32px 36px; }
+.dialog-body h2 { font-size: 38px; letter-spacing: -.04em; }
+.dialog-summary { color: #536273; font-size: 15px; line-height: 1.7; }
+.dialog-details > div > span, .dialog-role > span { font-size: 10px; }
+.dialog-details li, .dialog-role p { color: #34495e; font-size: 14px; line-height: 1.65; }
+.dialog-tags span { color: #43576a; font-size: 11px; }
+.dialog-note { color: #607184; font-size: 12px; }
+
+@media (max-width: 900px) {
+  .section-aside { max-width: 300px; }
+  .service-card { padding: 20px; }
+  .service-card h3 { font-size: 17px; }
+  .skill-group { grid-template-columns: 140px 1fr; }
+}
+@media (max-width: 640px) {
+  .site-nav { font-size: 15px; }
+  .eyebrow { font-size: 10px; }
+  .hero h1 { font-size: clamp(44px, 11.5vw, 54px); line-height: 1.05; }
+  .hero-intro { max-width: 320px; font-size: 15px; }
+  .ticker-track { font-size: 10px; }
+  .projects-section { padding-top: 68px; padding-bottom: 68px; }
+  .section-heading h2, .services-heading h2, .about-copy h2, .skills-intro h2, .contact-section h2 {
+    font-size: clamp(34px, 9vw, 42px);
+    line-height: 1.12;
+  }
+  .section-aside { max-width: 340px; font-size: 14px; }
+  .filter-chip { padding: 9px 12px; font-size: 12px; }
+  .project-visual { height: 218px; }
+  .project-card-copy { min-height: 0; padding: 18px; }
+  .project-card h3 { font-size: 22px; }
+  .project-card-copy > p { font-size: 14px; }
+  .project-open { font-size: 13px; }
+  .project-footnote { align-items: flex-start; font-size: 12px; line-height: 1.6; }
+  .services-inner { padding-top: 64px; padding-bottom: 64px; }
+  .service-card { padding: 18px; }
+  .service-card h3 { font-size: 18px; }
+  .service-card p { min-height: 0; font-size: 14px; }
+  .service-tags i { font-size: 10px; }
+  .skills-section { gap: 24px; padding-top: 64px; padding-bottom: 66px; }
+  .skills-intro > p:last-child { font-size: 14px; }
+  .skill-group { grid-template-columns: 112px 1fr; gap: 10px; padding: 14px 0; }
+  .skill-group > span { font-size: 9px; }
+  .skill-group i { padding: 7px 9px; font-size: 12px; }
+  .about-inner { gap: 20px; padding-top: 64px; padding-bottom: 62px; }
+  .about-copy > p { margin: 18px 0 24px; font-size: 14px; }
+  .focus-list > div { grid-template-columns: 28px 1fr; gap: 9px; padding: 14px 0; }
+  .focus-list b { font-size: 14px; }
+  .focus-list small { font-size: 12px; }
+  .about-note { min-height: 130px; }
+  .contact-section { padding-top: 64px; padding-bottom: 64px; }
+  .contact-copy { max-width: 320px; font-size: 14px; }
+  .contact-link { padding: 12px 14px; font-size: 13px; }
+  .site-footer > p, .back-top { font-size: 11px; }
+  .dialog-body { padding: 24px 20px; }
+  .dialog-body h2 { font-size: 32px; }
+  .dialog-summary { font-size: 14px; }
+  .dialog-details li, .dialog-role p { font-size: 13px; }
+  .dialog-note { align-items: flex-start; font-size: 11px; }
 }

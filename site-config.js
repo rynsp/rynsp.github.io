@@ -1,7 +1,7 @@
 /* Ubah nilai di sini untuk menyesuaikan identitas dan tautan publik. */
 window.PORTFOLIO_CONFIG = {
   name: "Ryan Syahputera",
-  role: "WebGIS Programmer · Pengembang Web & Mobile",
+  role: "Web & Mobile Developer",
   email: "ryan93sp@gmail.com",
   whatsapp: "",
   github: "",
